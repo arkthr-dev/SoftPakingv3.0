@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="row flex-lg-nowrap">
+
+
+        <div class="col">
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="e-profile">
+                                <div class="row">
+                                    <div class="col-12 col-sm-auto mb-3">
+                                        <div class="label bottom alig">
+                                            <img [src]="currentImage" (click)="inputImageProfile.click()" width="144" height="144" />
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                                        <div class="text-center text-sm-left mb-2 mb-sm-0">
+                                            <div class="mt-2">
+
+                                                <input hidden type="file" #inputImageProfile formControlName="photoURL" (change)="handleImage(($event?.target?.files[0]))">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item"><a href="" class="active nav-link">Información Personal</a></li>
+                                </ul>
+                                <div class="tab-content pt-3">
+                                    <div class="tab-pane active">
+                                        <form class="form" (ngSubmit)="onSaveUser(profileForm.value)" [formGroup]="profileForm">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Nombre</label>
+                                                                <input class="form-control" type="text" formControlName="displayName">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Correo Electrónico</label>
+                                                                <input class="form-control" type="text" formControlName="email">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-end">
+                                                    <button class="btn btn-primary" type="submit">Guardar cambios</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="px-xl-3">
+                                <button class="btn btn-block btn-secondary" (click)="onLogout()">
+                                    <i class="icofont-sign-out"></i>
+                <span>  Salir</span>
+              </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card align">
+                        <div class="card-body">
+                            <h6 class="card-title font-weight-bold">Soporte</h6>
+                            <p class="card-text">¿Alguna duda, comentario o sugerencia? Contáctanos ahora mismo.</p>
+                            <button type="button" class="btn btn-primary">Contáctanos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

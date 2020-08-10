@@ -1,0 +1,15 @@
+<div class="jumbotron text-center" *ngIf="user$ | async as user; else loading">
+    <h1 class="display-3">¡Gracias por registrarte!</h1>
+    <p class="lead">Te hemos enviado un correo de confirmacion a <strong>{{ user?.email }}</strong>, verfícalo para disfrutar al máximo de nuestra app.</p>
+    <a class="btn btn-outline-primary" (click)="onSendEmail()">Reenviar correo</a>
+    <hr>
+    <p>
+        ¿Necesitas ayuda? <a href="">Contáctanos</a>
+    </p>
+    <p class="lead">
+        <a class="btn btn-outline-info" routerLink="/" role="button">Regresar al sitio</a>
+    </p>
+</div>
+<<ng-template #loading>
+    Por favor, espere...
+    </ng-template>

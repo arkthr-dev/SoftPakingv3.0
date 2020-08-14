@@ -44,3 +44,13 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg
+src/assets/css/park/css/icons/material-design-iconic-font/css/materialdesignicons.min.css
+src/assets/css/park/css/icons/material-design-iconic-font/css/material-design-iconic-font.css
+src/assets/css/park/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot

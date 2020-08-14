@@ -13,6 +13,11 @@
                     <a class="nav-link" routerLink='/features' routerLinkActive="active">Características</a>
                 </li>
             </ul>
+            <ul class="navbar-nav" *ngIf="user$ | async as user;">
+                <li class="nav-item ">
+                    <a class="nav-link" routerLink='/park' routerLinkActive="active">Estacionamientos</a>
+                </li>
+            </ul>
             <ul class="navbar-nav ml-auto" *ngIf="user$ | async as user; else login">
                 <li class="nav-item">
                     <a routerLink='/profile' class=" nav-link"> {{ user?.email }} <i class="icofont-ui-user"></i></a>
